@@ -1,2 +1,2 @@
-Chiχ fs.extra Components
+XML for Chiχ
 =======
