@@ -1,0 +1,29 @@
+{
+  "name": "nodule-xml",
+  "description": "XML components for Chiχ",
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "version": "0.0.2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/xml.git"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "main": "x",
+  "scripts": {
+    "test": "chit -r"
+  },
+  "devDependencies": {
+    "chit": "0.x.x"
+  },
+  "chix": {
+    "name": "xml",
+    "env": "server",
+    "color": "rgb(136,96,35)"
+  },
+  "dependencies": {
+    "xml2json": "0.x.x"
+  }
+}

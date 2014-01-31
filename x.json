@@ -1,0 +1,45 @@
+{
+  "name": "xml",
+  "description": "XML components for Chiχ",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/xml.git"
+  },
+  "dependencies": {
+    "xml2json": "0.x.x"
+  },
+  "nodes": [
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "title": "XML",
+            "type": "string",
+            "required": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Object",
+            "type": "object"
+          }
+        }
+      },
+      "require": {
+        "xml2json": "0.x.x"
+      },
+      "phrases": {
+        "active": "Converting XML to JSON"
+      },
+      "description": "Converts XML to JSON",
+      "title": "XML To JSON",
+      "ns": "xml",
+      "name": "2json",
+      "env": "server",
+      "fn": "output = [xml2json, 'toJson', input.in]\n"
+    }
+  ],
+  "twigs": [],
+  "env": "server"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "2json",
+  "ns": "xml",
+  "title": "XML To JSON",
+  "description": "Converts XML to JSON",
+  "phrases": {
+    "active": "Converting XML to JSON"
+  },
+  "require": {
+    "xml2json": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "XML",
+        "type": "string",
+        "required": true
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Object",
+        "type": "object"
+      }
+    }
+  }
+}
