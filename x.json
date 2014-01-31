@@ -37,7 +37,7 @@
       "ns": "xml",
       "name": "2json",
       "env": "server",
-      "fn": "output.out = xml2json.toJson(input.in)\n"
+      "fn": "output.out = xml2json.toJson(input.in, { object: true })\n"
     }
   ],
   "twigs": [],
