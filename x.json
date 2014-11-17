@@ -11,6 +11,11 @@
   },
   "nodes": [
     {
+      "dependencies": {
+        "npm": {
+          "xml2json": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -25,9 +30,6 @@
             "type": "object"
           }
         }
-      },
-      "require": {
-        "xml2json": "0.x.x"
       },
       "phrases": {
         "active": "Converting XML to JSON"

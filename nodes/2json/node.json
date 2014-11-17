@@ -6,9 +6,6 @@
   "phrases": {
     "active": "Converting XML to JSON"
   },
-  "require": {
-    "xml2json": "0.x.x"
-  },
   "ports": {
     "input": {
       "in": {
@@ -22,6 +19,11 @@
         "title": "Object",
         "type": "object"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "xml2json": "0.x.x"
     }
   }
 }
