@@ -28,7 +28,7 @@ module.exports = {
   },
   fn: function _2json(input, $, output, state, done, cb, on, xml2json) {
     var r = function() {
-      output.out = $.write('in', xml2json.toJson(input.in, {
+      output.out = $.write('in', xml2json.toJson($.in, {
         object: true
       }))
     }.call(this);
