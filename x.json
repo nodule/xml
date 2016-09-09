@@ -11,10 +11,12 @@
   },
   "nodes": [
     {
-      "dependencies": {
-        "npm": {
-          "xml2json": "0.x.x"
-        }
+      "name": "2json",
+      "ns": "xml",
+      "title": "XML To JSON",
+      "description": "Converts XML to JSON",
+      "phrases": {
+        "active": "Converting XML to JSON"
       },
       "ports": {
         "input": {
@@ -31,17 +33,14 @@
           }
         }
       },
-      "phrases": {
-        "active": "Converting XML to JSON"
+      "dependencies": {
+        "npm": {
+          "xml2json": "0.x.x"
+        }
       },
-      "description": "Converts XML to JSON",
-      "title": "XML To JSON",
-      "ns": "xml",
-      "name": "2json",
       "env": "server",
       "fn": "output.out = $.write('in', xml2json.toJson($.in, {object: true}))\n"
     }
   ],
-  "twigs": [],
   "env": "server"
 }
